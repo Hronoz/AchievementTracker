@@ -1,4 +1,4 @@
-namespace AchievementTracker.Models;
+namespace AchievementTracker.Domain;
 
 public class Achievement
 {

@@ -1,6 +1,6 @@
-using AchievementTracker.Models;
+using AchievementTracker.Domain;
 
-namespace AchievementTracker.Data;
+namespace AchievementTracker.Infrastructure;
 
 public interface IAchievementRepository
 {

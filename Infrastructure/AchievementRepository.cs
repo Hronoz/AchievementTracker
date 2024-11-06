@@ -1,7 +1,7 @@
-using AchievementTracker.Models;
+using AchievementTracker.Domain;
 using Microsoft.EntityFrameworkCore;
 
-namespace AchievementTracker.Data;
+namespace AchievementTracker.Infrastructure;
 
 public class AchievementRepository : IAchievementRepository
 {

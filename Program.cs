@@ -1,8 +1,15 @@
-using AchievementTracker.Data;
+using AchievementTracker.Domain;
+using AchievementTracker.Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder
+    .Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<AchievementTrackerDbContext>()
+    .AddSignInManager<SignInManager<ApplicationUser>>();
 
 builder.Services.AddControllers();
 

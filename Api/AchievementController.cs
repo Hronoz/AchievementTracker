@@ -1,8 +1,8 @@
-using AchievementTracker.Data;
-using AchievementTracker.Models;
+using AchievementTracker.Infrastructure;
+using AchievementTracker.Domain;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AchievementTracker.Controllers;
+namespace AchievementTracker.Api;
 
 [ApiController]
 [Route("api/[controller]")]
